@@ -1,0 +1,47 @@
+{
+  "name": "@cryptounicorns/fixed-width-integer",
+  "version": "0.1.0",
+  "description": "Fixed-width integers built on top of BigInt.",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "ts-mocha -p tsconfig.json test --recursive --exit test/**/*.test.ts",
+    "coverage": "nyc npm run test",
+    "lint": "eslint --fix .",
+    "format": "prettier --write .",
+    "docs": "typedoc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptounicorns/fixed-width-integer.git"
+  },
+  "author": "Michael Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cryptounicorns/fixed-width-integer/issues"
+  },
+  "homepage": "https://github.com/cryptounicorns/fixed-width-integer#readme",
+  "devDependencies": {
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.3.1",
+    "@types/sinon": "^10.0.15",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "chai": "^4.3.7",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "fast-check": "^3.10.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.8.8",
+    "sinon": "^15.2.0",
+    "ts-mocha": "^10.0.0",
+    "typedoc": "^0.24.8",
+    "typescript": "^5.1.3"
+  }
+}
